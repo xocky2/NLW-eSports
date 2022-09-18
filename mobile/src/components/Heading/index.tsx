@@ -4,17 +4,17 @@ import { styles } from './styles';
 
 interface Props extends ViewProps{
     title: string;
-    subttitle: string;
+    subtitle: string;
 }
 
-export function Heading({ title,subttitle, ...rest }: Props) {
+export function Heading({ title,subtitle, ...rest }: Props) {
   return (
     <View style={styles.container}{...rest}>
         <Text style ={styles.title}>
             {title}
         </Text>
         <Text style={styles.subtitle}>
-            {subttitle}
+            {subtitle}
         </Text>
     </View>
   );
